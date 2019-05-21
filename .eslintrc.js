@@ -12,5 +12,8 @@ module.exports = {
     ecmaVersion: 2018,
   },
   rules: {
+    "quotes": 0,
+    "arrow-parens": 0,
+    "no-undef": 0
   },
 };
