@@ -320,9 +320,15 @@ a {
   justify-content: 0;
   align-items: center;
 }
+hr {
+  width: 80%;
+  height: 1px;
+  background: #e0e0e0;
+  border: none;
+}
 .landing {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: row;
   justify-content: 0;
@@ -373,11 +379,17 @@ a {
   border-radius: 0.3em;
   border: 1px solid #FF9900;
   padding: 0.3em 0.5em;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 5rem;
 }
+.landing div main button:hover {
+  cursor: pointer;
+  background: #f09000;
+  color: #f8f8f8;
+  transition: 0.2s;
+}
 .landing img {
-  width: 37%;
+  width: 33%;
 }
 .about {
   margin: 6rem 0;
@@ -405,9 +417,21 @@ a {
 }
 .about .about-cards .card {
   width: 30rem;
-  height: 35rem;
+  height: 32rem;
   border-radius: 0.5rem;
   margin: 2rem;
+  padding: 2.2rem;
+  box-shadow: 0 0 0.5rem 0.5rem #ADADAD;
+}
+.about .about-cards .card h3 {
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+.about .about-cards .card img {
+  width: 5rem;
+  height: 5rem;
+  text-align: left;
+  margin-bottom: 3rem;
 }
 .about .about-cards .card:nth-child(even) {
   background: #89B774;
