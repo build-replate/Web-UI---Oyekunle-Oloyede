@@ -1,6 +1,6 @@
 .landing {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   .flex(row, 0, 0);
   background: url("../assets/bg/landing-bg.svg");
   background-size: cover;
@@ -23,7 +23,7 @@
         a {
           color: @darkGrey;
           text-decoration: none;
-          padding-left: 2rem;
+          padding-left: 1.5rem;
         }
       }
     } 
@@ -42,13 +42,20 @@
 
       button {
         .button(15rem, 5rem);
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 5rem;
+
+        &:hover {
+          cursor: pointer;
+          background: darken(@orange, 3%);
+          color: @buttonColor;
+          transition: 0.2s;
+        }
       }
     }
   }
   
   img {
-    width: 37%;
+    width: 33%;
   }
 }

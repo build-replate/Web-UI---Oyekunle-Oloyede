@@ -1,0 +1,41 @@
+.call-to-action {
+  .flex(column, center, center);
+  width: 80%;
+  margin-bottom: 5rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem lighten(@grey, 25%);
+  padding: 5rem;
+
+  .green {
+    color: @green;
+  }
+
+  .orange {
+    color: @orange;
+  }
+
+  .tan {
+    color: @tan;
+  }
+
+  p {
+    font-size: 4rem;
+    line-height: 5rem;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  button {
+    .button(20rem, 4rem);
+    background: @green;
+    border: 1px solid @green;
+    font-size: 1.5rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem lighten(@green, 25%);
+
+    &:hover {
+      cursor: pointer;
+      background: darken(@green, 5%);
+      transition: 0.2s;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.action-plan {
+  width: 70%;
+  background: url("../assets/bg/actionPlan-bg.svg");
+  background-size: cover;
+  .flex(column, center, center);
+  padding: 10rem 0;
+  border-radius: 1.5rem;
+
+  .action-detail {
+    width: 70%;
+    text-align: center;
+
+    p,
+    h2 {
+      color: @buttonColor;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .details {
+    .flex(row, space-between, baseline);
+    width: 70%;
+
+    .plan {
+      .flex(column, 0, center);
+      margin: 2rem;
+
+      h4 {
+        background: @buttonColor;
+        color: @green;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        text-align: center;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        text-align: justify;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: @buttonColor;
+      }
+    }
+  }
+}

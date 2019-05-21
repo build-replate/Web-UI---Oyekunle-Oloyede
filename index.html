@@ -11,18 +11,19 @@
 
 <body>
   <div class="container">
-    <div class="landing">
+    <div class="landing" id="home">
       <div>
         <header>
           <img src="assets/img/Logo.png" alt="logo" />
 
           <nav>
-            <a href="#">Home</a>
             <a href="#">About Us</a>
+            <a href="#" class="problem">The Problem with Food</a>
+            <a href="#" id="to-action">Call to Action</a>
           </nav>
         </header>
         <main>
-          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet consectetur adipisicing elit.</h2>
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           <button>Join Us</button>
         </main>
@@ -41,6 +42,7 @@
 
       <div class="about-cards">
         <div class="card">
+          <img src="assets/icons/groceries.svg" alt="groceries">
           <h3>Do you have extra food?</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur fugit ratione ipsa sequi vero?
@@ -48,6 +50,7 @@
         </div>
         <div class="card">
           <div>
+            <img src="assets/icons/logistics.svg" alt="catch-deliver">
             <h3>Can you catchAndDeliver?</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur fugit ratione ipsa sequi vero?
@@ -56,6 +59,7 @@
 
         </div>
         <div class="card">
+          <img src="assets/icons/social-care.svg" alt="social-care">
           <h3>Social Impact Investment</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur fugit ratione ipsa sequi vero?
@@ -63,7 +67,151 @@
         </div>
       </div>
     </div>
+
+    <hr>
+
+    <div class="problem-statement" id="problem">
+      <div class="problem-info">
+        <h2>The Problem with Food</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reiciendis repellat ipsum commodi suscipit
+          sed, nemo ut iure aliquam, sint voluptate officia deserunt natus alias placeat. Dicta nisi exercitationem vel!
+        </p>
+      </div>
+      <div class="problem-stat">
+        <h2>40% of food is thrown away</h2>
+        <img src="assets/img/problem-statement-boy.jpg" alt="kid">
+        <h2>1 in 7 people are food insecure</h2>
+      </div>
+    </div>
+
+    <div class="action-plan">
+      <div class="action-detail">
+        <h2>How Can We Do Better</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore veniam necessitatibus sapiente dolores
+          consequuntur sunt neque minima, ratione culpa nihil reprehenderit eius repellat adipisci quia in ea architecto
+          voluptate harum!
+        </p>
+      </div>
+      <div class="details">
+        <div class="plan">
+          <h4>1</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, labore saepe corporis explicabo,
+            architecto pariatur necessitatibus delectus
+          </p>
+        </div>
+        <div class="plan">
+          <h4>2</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, labore saepe corporis explicabo,
+            architecto pariatur necessitatibus delectus
+          </p>
+        </div>
+        <div class="plan">
+          <h4>3</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, labore saepe corporis explicabo,
+            architecto pariatur necessitatibus delectus
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="shout-out">
+        <img src="assets/bg/quote.svg" alt="quotes">
+        <p>What people are saying about catchAndDeliver!!!</p>
+      </div>
+      <div class="testimonies">
+        <h4>
+          <</h4> <div class="testimony">
+            <div class="top">
+              <img src="assets/users/girl-2.svg" alt="user-1">
+              <div>
+                <div class="name">Jane Doe</div>
+                <div class="title">Software Developer</div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam error iure, aut.
+            </p>
+      </div>
+      <div class="testimony">
+        <div class="top">
+          <img src="assets/users/boy.svg" alt="user-1">
+          <div>
+            <div class="name">John Doe</div>
+            <div class="title">Software Developer</div>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam error iure, aut.
+        </p>
+      </div>
+
+      <h4>></h4>
+
+      <!-- <div class="testimony">
+          <div class="top">
+            <img src="assets/users/girl.svg" alt="user-1">
+            <div>
+              <div class="name">Jane Doe</div>
+              <div class="title">Software Developer</div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam error iure, aut.
+          </p>
+        </div>
+        <div class="testimony">
+          <div class="top">
+            <img src="assets/users/man.svg" alt="user-1">
+            <div>
+              <div class="name">Jane Doe</div>
+              <div class="title">Software Developer</div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam error iure, aut.
+          </p>
+        </div> -->
+    </div>
   </div>
+
+  <div class="call-to-action" id="call-to-action">
+    <p>The future of <span class="green">volunteering</span> is <span class="orange">catch</span><span class="tan">And</span><span class="green">Deliver</span></p>
+    <button>Invest Now</button>
+  </div>
+
+  <footer id="footer">
+    <div class="contact">
+      <ul>
+        <li id="go-home">Home</li>
+        <li>About Us</li>
+        <li class="problem">The Problem with Food</li>
+        <li id="to-action">Call to Action</li>
+      </ul>
+
+      <div class="sign-in">
+        <p>We would like to hear from you. Send us a mail at info@caa.org</p>
+        <button>Sign In</button>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+      <img src="assets/img/Logo.png" alt="logo" />
+      <p>&copy; Copyright 2018 <span class="orange">catch</span><span class="tan">And</span><span class="green">Deliver</span></p>
+    </div>    
+  </footer>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="components/animateScroll/animatescroll.min.js"></script>
+  <script src="components/animateScroll/animate.js"></script>
 </body>
 
 </html>

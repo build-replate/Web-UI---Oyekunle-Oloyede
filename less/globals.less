@@ -50,7 +50,7 @@ h4 {
 p {
   font-size: 1.8rem;
   font-weight: lighter;
-  color: darken(@darkerGrey, 20%);
+  color: @dark;
   line-height: 3rem;
 
   @media @mobile {
@@ -65,4 +65,12 @@ a {
 
 .container {
   .flex(column, 0, center);
+}
+
+hr {
+  width: 80%;
+  height: 1px;
+  background: lighten(@grey, 20);
+  border: none;
+  margin: 5rem 0;
 }
