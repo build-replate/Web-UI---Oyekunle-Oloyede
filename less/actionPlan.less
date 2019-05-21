@@ -6,9 +6,18 @@
   padding: 10rem 0;
   border-radius: 1.5rem;
 
+  @media @mobile {
+    width: 100%;
+    padding: 5rem 0;
+  }
+
   .action-detail {
     width: 70%;
     text-align: center;
+
+    @media @mobile {
+      width: 90%;
+    }
 
     p,
     h2 {
@@ -20,6 +29,11 @@
   .details {
     .flex(row, space-between, baseline);
     width: 70%;
+
+    @media @mobile {
+      .flex(column, 0, 0);
+      width: 90%;
+    }
 
     .plan {
       .flex(column, 0, center);
