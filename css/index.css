@@ -356,7 +356,7 @@ hr {
 .landing div header nav a {
   color: #808080;
   text-decoration: none;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
 }
 .landing div main {
   display: flex;
@@ -665,7 +665,7 @@ footer .contact {
   width: 80%;
 }
 footer .contact ul li {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   font-size: 2rem;
 }
 footer .contact .sign-in {

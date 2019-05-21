@@ -11,14 +11,15 @@
 
 <body>
   <div class="container">
-    <div class="landing">
+    <div class="landing" id="home">
       <div>
         <header>
           <img src="assets/img/Logo.png" alt="logo" />
 
           <nav>
-            <a href="#">Home</a>
             <a href="#">About Us</a>
+            <a href="#" class="problem">The Problem with Food</a>
+            <a href="#" id="to-action">Call to Action</a>
           </nav>
         </header>
         <main>
@@ -69,9 +70,9 @@
 
     <hr>
 
-    <div class="problem-statement">
+    <div class="problem-statement" id="problem">
       <div class="problem-info">
-        <h2>New Opportunities</h2>
+        <h2>The Problem with Food</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reiciendis repellat ipsum commodi suscipit
           sed, nemo ut iure aliquam, sint voluptate officia deserunt natus alias placeat. Dicta nisi exercitationem vel!
@@ -179,18 +180,18 @@
     </div>
   </div>
 
-  <div class="call-to-action">
+  <div class="call-to-action" id="call-to-action">
     <p>The future of <span class="green">volunteering</span> is <span class="orange">catch</span><span class="tan">And</span><span class="green">Deliver</span></p>
     <button>Invest Now</button>
   </div>
 
-  <footer>
+  <footer id="footer">
     <div class="contact">
       <ul>
-        <li>Home</li>
+        <li id="go-home">Home</li>
         <li>About Us</li>
-        <li>Call to Action</li>
-        <li>Problem Statement</li>
+        <li class="problem">The Problem with Food</li>
+        <li id="to-action">Call to Action</li>
       </ul>
 
       <div class="sign-in">
@@ -207,6 +208,10 @@
     </div>    
   </footer>
   </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="components/animateScroll/animatescroll.min.js"></script>
+  <script src="components/animateScroll/animate.js"></script>
 </body>
 
 </html>
