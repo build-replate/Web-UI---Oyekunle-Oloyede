@@ -668,6 +668,9 @@ footer .contact ul li {
   margin-bottom: 4rem;
   font-size: 2rem;
 }
+footer .contact ul li:hover {
+  cursor: pointer;
+}
 footer .contact .sign-in {
   display: flex;
   flex-direction: column;
