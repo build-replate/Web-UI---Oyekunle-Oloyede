@@ -3,8 +3,16 @@
   width: 100%;
   margin: 20rem 0 15rem 0;
 
+  @media @mobile {
+    margin: 10rem 0 7rem 0;
+  }
+
   .shout-out {
     width: 50%;
+
+    @media @mobile {
+      width: 90%;
+    }
 
     img {
       width: 10rem;
@@ -21,13 +29,22 @@
       left: 1rem;
       font-size: 4rem;
       line-height: 5rem;
+
+      @media @mobile {
+        font-size: 3rem;
+      }
     }
   }
 
   .testimonies {
     .flex(row, center, center);
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
+
+    @media @mobile {
+      .flex(column, 0, 0);
+      width: 90%;
+    }
 
     h4 {
       background: @orange;
@@ -56,6 +73,13 @@
       box-shadow: 0 0 0.3rem 0.3rem lighten(@grey, 25%);
       border-radius: 2rem;
       margin: 2rem;
+
+      @media @mobile {
+        width: 100%;
+        height: 23rem;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
 
       .top {
         .flex(row, space-between, flex-start);
