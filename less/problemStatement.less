@@ -2,10 +2,19 @@
   margin: 6rem 0;
   .flex(column, 0, center);
 
+  @media @mobile {
+    margin: 2rem 0;
+  }
+
   .problem-info {
     width: 50%;
     text-align: center;
     margin-bottom: 8rem;
+
+    @media @mobile {
+      width: 90%;
+      margin-bottom: 4rem;
+    }
 
     h2 {
       color: @dark;
@@ -17,10 +26,21 @@
     .flex(row, 0, center);
     width: 80%;
 
+    @media @mobile {
+      .flex(column, 0, 0);
+      width: 90%;
+    }
+
     h2 {
       padding: 5rem;
       text-align: center;
       color: @orange;
+    }
+
+    img {
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 }
