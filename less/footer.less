@@ -1,0 +1,64 @@
+footer {
+  background: url('../assets/bg/footer-bg.svg');
+  background-size: cover;
+  .flex(column, 0, center);
+  width: 100%;
+  margin-top: 10rem;
+
+  .contact {
+    .flex(row, space-between, 0);
+    width: 80%;
+
+    ul {
+      li {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+    }
+
+    .sign-in {
+      .flex(column, 0, center);
+      width: 25rem;
+      height: 25rem;
+      background: @green;
+      padding: 3rem;
+      border-radius: 0.5rem;
+
+      p {
+        color: @buttonColor;
+      }
+
+      button {
+        .button(13rem, 4rem);
+        font-size: 1.5rem;
+        background: @buttonColor;
+        color: @green;
+        border: 1px solid @buttonColor;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .copyright {
+    .flex(row, space-between, center);
+    width: 90%;
+    margin-bottom: 3rem;
+
+    img {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    .green {
+      color: @green;
+    }
+  
+    .orange {
+      color: @orange;
+    }
+  
+    .tan {
+      color: @tan;
+    }
+  }
+}
