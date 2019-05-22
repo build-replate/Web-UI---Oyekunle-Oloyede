@@ -7,12 +7,7 @@ class ToggleMenu {
   addToggle() {
     const nav = document.querySelector("nav");
     this.element.addEventListener("click", () => {
-      if (nav.style.display === "block") {
-        nav.style.display = "none";
-        return;
-      }
-
-      nav.style.display = "block";
+      nav.classList.toggle("show");
     });
   }
 }
