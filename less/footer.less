@@ -55,6 +55,16 @@ footer {
         border: 1px solid @buttonColor;
         margin-top: 2rem;
 
+        &:hover {
+          cursor: pointer;
+          background: darken(@buttonColor, 5%);
+          transition: 0.3s;
+        }
+
+        &:active {
+          .active(@buttonColor);
+        }
+
         @media @mobile {
           margin-top: 4rem;
         }
