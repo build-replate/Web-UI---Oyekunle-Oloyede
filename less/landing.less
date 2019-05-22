@@ -19,6 +19,7 @@
     header {
       .flex(row, 0, center);
       padding: 0.5rem 0;
+      z-index: 2;
 
       @media @mobile {
         .flex(row-reverse, space-between, center);
@@ -47,18 +48,25 @@
         }
 
         @media @mobile {
+          display: block;
           background: @green;
           position: fixed;
-          left: 0;
+          left: -15rem;
           top: 5rem;
+          opacity: 0;
           padding: 1rem;
-          display: none;
+          transition: 0.5s;
         }
 
         a {
           color: @darkGrey;
           text-decoration: none;
           padding-left: 3rem;
+
+          &:hover {
+            color: lighten(@orange, 20%);
+            transition: 0.3s;
+          }
 
           @media @tablet {
             padding-right: 1.5rem;
@@ -72,6 +80,12 @@
             color: @buttonColor;
           }
         }
+      }
+
+      .show {
+        display: block;
+        left: 0;
+        opacity: 1;
       }
     }
 
@@ -121,10 +135,11 @@
         }
 
         &:hover {
-          cursor: pointer;
-          background: darken(@orange, 3%);
-          color: @buttonColor;
-          transition: 0.2s;
+          .hover(@orange);
+        }
+
+        &:active {
+          .active(@orange);
         }
       }
     }
