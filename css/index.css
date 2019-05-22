@@ -754,6 +754,11 @@ hr {
   width: 100%;
   margin: 20rem 0 15rem 0;
 }
+@media (max-width: 800px) {
+  .testimonial {
+    margin: 10rem 0 4rem 0;
+  }
+}
 @media (max-width: 500px) {
   .testimonial {
     margin: 10rem 0 7rem 0;
@@ -1058,12 +1063,23 @@ footer .copyright img {
   width: 50%;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .about-cad .mission-statement {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .about-cad .mission-statement {
+    width: 90%;
+  }
+}
 .about-cad .mission-statement h2 {
   color: #3d3d3d;
   margin-bottom: 3rem;
 }
 .about-cad h3 {
   margin: 5rem 0 2rem 0;
+  text-align: center;
 }
 .about-cad .meet-the-team {
   display: flex;
@@ -1074,6 +1090,11 @@ footer .copyright img {
   max-width: 70%;
   background: #fffbef;
   border-radius: 2rem;
+}
+@media (max-width: 500px) {
+  .about-cad .meet-the-team {
+    max-width: 90%;
+  }
 }
 .about-cad .meet-the-team h3 {
   color: #3d3d3d;
@@ -1086,6 +1107,16 @@ footer .copyright img {
   width: 20rem;
   height: 27rem;
   margin: 5rem 3rem;
+}
+@media (max-width: 800px) {
+  .about-cad .meet-the-team .bio {
+    margin: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-cad .meet-the-team .bio {
+    margin: 3rem 2rem;
+  }
 }
 .about-cad .meet-the-team .bio img {
   width: 15rem;
