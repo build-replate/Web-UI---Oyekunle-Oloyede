@@ -24,10 +24,11 @@
     box-shadow: 0.2rem 0.3rem 0.3rem lighten(@orange, 35%);
 
     &:hover {
-      cursor: pointer;
-      background: darken(@orange, 3%);
-      color: @buttonColor;
-      transition: 0.2s;
+      .hover(@orange);
+    }
+
+    &:active {
+      .active(@orange);
     }
   }
 

@@ -135,15 +135,11 @@
         }
 
         &:hover {
-          cursor: pointer;
-          background: darken(@orange, 5%);
-          color: @buttonColor;
-          transition: 0.3s;
+          .hover(@orange);
         }
 
         &:active {
-          transform: translateY(0.2rem);
-          background: darken(@orange, 10%);
+          .active(@orange);
         }
       }
     }
