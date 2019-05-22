@@ -792,97 +792,6 @@ hr {
     font-size: 3rem;
   }
 }
-.testimonial .testimonies {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-@media (max-width: 800px) {
-  .testimonial .testimonies {
-    display: flex;
-    flex-direction: column;
-    justify-content: 0;
-    align-items: 0;
-  }
-}
-@media (max-width: 500px) {
-  .testimonial .testimonies {
-    display: flex;
-    flex-direction: column;
-    justify-content: 0;
-    align-items: 0;
-    width: 90%;
-  }
-}
-.testimonial .testimonies h4 {
-  background: #FF9900;
-  color: #f8f8f8;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  text-align: center;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0.2rem 0.3rem 0.3rem #ffe0b3;
-}
-.testimonial .testimonies h4:hover {
-  cursor: pointer;
-  background: #f09000;
-  color: #f8f8f8;
-  transition: 0.2s;
-}
-.testimonial .testimonies .testimony {
-  display: flex;
-  flex-direction: column;
-  justify-content: 0;
-  align-items: 0;
-  max-width: 30%;
-  padding: 3rem;
-  box-shadow: 0 0 0.3rem 0.3rem #ededed;
-  border-radius: 2rem;
-  margin: 2rem;
-}
-@media (max-width: 800px) {
-  .testimonial .testimonies .testimony {
-    display: flex;
-    flex-direction: column;
-    justify-content: 0;
-    align-items: 0;
-    max-width: 60%;
-  }
-}
-@media (max-width: 500px) {
-  .testimonial .testimonies .testimony {
-    max-width: 100%;
-    padding: 2rem;
-    margin: 2rem 0;
-  }
-}
-.testimonial .testimonies .testimony .top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-}
-.testimonial .testimonies .testimony .top img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  box-shadow: 0 0 0.2rem 0.2rem #ADADAD;
-}
-.testimonial .testimonies .testimony .top .name,
-.testimonial .testimonies .testimony .top .title {
-  font-size: 1.7rem;
-  margin-bottom: 0.5rem;
-  text-align: right;
-}
-.testimonial .testimonies .testimony .top .name {
-  color: #89B774;
-}
 .call-to-action {
   display: flex;
   flex-direction: column;
@@ -1144,4 +1053,99 @@ footer .copyright img {
   width: 3rem;
   height: 3rem;
   margin: 1rem;
+}
+.testimonies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .testimonies {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: 0;
+  }
+}
+@media (max-width: 500px) {
+  .testimonies {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: 0;
+    width: 90%;
+  }
+}
+.testimonies h4 {
+  background: #FF9900;
+  color: #f8f8f8;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0.2rem 0.3rem 0.3rem #ffe0b3;
+}
+.testimonies h4:hover {
+  cursor: pointer;
+  background: #f09000;
+  color: #f8f8f8;
+  transition: 0.2s;
+}
+.testimonies .testimony {
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: 0;
+  max-width: 30%;
+  padding: 3rem;
+  box-shadow: 0 0 0.3rem 0.3rem #ededed;
+  border-radius: 2rem;
+  margin: 2rem;
+  display: none;
+}
+@media (max-width: 800px) {
+  .testimonies .testimony {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: 0;
+    max-width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .testimonies .testimony {
+    max-width: 100%;
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+}
+.testimonies .testimony .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.testimonies .testimony .top img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0.2rem 0.2rem #ADADAD;
+}
+.testimonies .testimony .top .name,
+.testimonies .testimony .top .title {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+.testimonies .testimony .top .name {
+  color: #89B774;
+}
+.testimonies .show {
+  display: block;
 }
