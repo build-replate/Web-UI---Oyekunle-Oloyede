@@ -1092,6 +1092,9 @@ footer .copyright img {
   height: 3rem;
   margin: 1rem;
 }
+.about-cad .meet-the-team .bio .bio-info .contact-icons img:hover {
+  cursor: pointer;
+}
 .testimonies {
   display: flex;
   flex-direction: row;
