@@ -34,9 +34,11 @@
     box-shadow: 0.2rem 0.5rem 0.5rem lighten(@green, 25%);
 
     &:hover {
-      cursor: pointer;
-      background: darken(@green, 5%);
-      transition: 0.2s;
+      .hover(@green);
+    }
+
+    &:active {
+      .active(@green);
     }
   }
 }
