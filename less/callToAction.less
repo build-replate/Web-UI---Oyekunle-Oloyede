@@ -5,6 +5,11 @@
   box-shadow: 0.2rem 0.5rem 0.5rem lighten(@grey, 25%);
   padding: 5rem;
 
+  @media @mobile {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
   .green {
     color: @green;
   }
@@ -23,6 +28,10 @@
     text-align: center;
     padding: 2rem;
     margin-bottom: 4rem;
+
+    @media @mobile {
+      margin-bottom: 2.5rem;
+    }
   }
 
   button {
