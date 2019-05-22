@@ -4,6 +4,10 @@
   background: url("../assets/bg/about-bg.svg");
   background-size: cover;
 
+  @media @tablet {
+    margin-top: 5rem;
+  }
+
   @media @mobile {
     margin: 2rem 0;
   }
@@ -12,6 +16,10 @@
     width: 50%;
     text-align: center;
     margin-bottom: 8rem;
+
+    @media @tablet {
+      width: 80%;
+    }
 
     @media @mobile {
       width: 90%;
@@ -24,7 +32,8 @@
   }
 
   .about-cards {
-    .flex(row, space-between, 0);
+    .flex(row, space-around, 0);
+    flex-wrap: wrap;
 
     @media @mobile {
       .flex(column, 0, center);
