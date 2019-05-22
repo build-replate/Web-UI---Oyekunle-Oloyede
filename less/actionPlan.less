@@ -4,7 +4,13 @@
   background-size: cover;
   .flex(column, center, center);
   padding: 10rem 0;
+  margin-top: 10rem;
   border-radius: 1.5rem;
+
+  @media @tablet {
+    width: 90%;
+    padding: 7rem 0;
+  }
 
   @media @mobile {
     width: 100%;
@@ -29,6 +35,10 @@
   .details {
     .flex(row, space-between, baseline);
     width: 70%;
+
+    @media @tablet {
+      width: 90%;
+    }
 
     @media @mobile {
       .flex(column, 0, 0);

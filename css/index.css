@@ -344,6 +344,11 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 800px) {
+  .landing {
+    height: 70vh;
+  }
+}
 @media (max-width: 500px) {
   .landing {
     display: flex;
@@ -358,24 +363,48 @@ hr {
   flex-direction: row;
   justify-content: 0;
   align-items: center;
-  margin: 2rem 0;
+  padding: 0.5rem 0;
 }
 @media (max-width: 500px) {
   .landing div header {
+    display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: #ADADAD;
   }
 }
 .landing div header img {
   width: 6rem;
   height: 6rem;
-  margin-left: 2rem;
+  margin: 0 1rem;
+}
+@media (max-width: 500px) {
+  .landing div header img {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 .landing div header nav {
   padding-left: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: 0;
+  align-items: 0;
+}
+@media (max-width: 800px) {
+  .landing div header nav {
+    margin-left: auto;
+  }
 }
 @media (max-width: 500px) {
   .landing div header nav {
-    background: #dfebd9;
+    background: #89B774;
+    position: fixed;
+    left: 0;
+    top: 5rem;
     padding: 1rem;
     display: none;
   }
@@ -385,12 +414,18 @@ hr {
   text-decoration: none;
   padding-left: 1.5rem;
 }
+@media (max-width: 800px) {
+  .landing div header nav a {
+    padding-right: 1.5rem;
+  }
+}
 @media (max-width: 500px) {
   .landing div header nav a {
     display: block;
     text-align: center;
-    padding-left: 0;
+    padding: 1rem 0;
     margin-top: 1rem;
+    color: #f8f8f8;
   }
 }
 .landing div main {
@@ -400,6 +435,11 @@ hr {
   align-items: center;
   height: 80%;
 }
+@media (max-width: 500px) {
+  .landing div main {
+    padding-top: 12rem;
+  }
+}
 .landing div main h2 {
   text-align: center;
   vertical-align: middle;
@@ -407,15 +447,27 @@ hr {
   line-height: 5rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 800px) {
+  .landing div main h2 {
+    margin-top: 7rem;
+  }
+}
 @media (max-width: 500px) {
   .landing div main h2 {
     font-size: 3rem;
   }
 }
+.landing div main p {
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .landing div main p {
+    margin-top: 1rem;
+  }
+}
 @media (max-width: 500px) {
   .landing div main p {
     font-size: 1.5rem;
-    text-align: center;
   }
 }
 .landing div main button {
@@ -429,6 +481,11 @@ hr {
   font-size: 1.8rem;
   margin-top: 5rem;
 }
+@media (max-width: 800px) {
+  .landing div main button {
+    margin-top: 10rem;
+  }
+}
 .landing div main button:hover {
   cursor: pointer;
   background: #f09000;
@@ -436,7 +493,12 @@ hr {
   transition: 0.2s;
 }
 .landing .landing-image {
-  max-width: 390px;
+  max-width: 450px;
+}
+@media (max-width: 800px) {
+  .landing .landing-image {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .landing .landing-image {
@@ -452,6 +514,11 @@ hr {
   background: url("../assets/bg/about-bg.svg");
   background-size: cover;
 }
+@media (max-width: 800px) {
+  .about {
+    margin-top: 5rem;
+  }
+}
 @media (max-width: 500px) {
   .about {
     margin: 2rem 0;
@@ -461,6 +528,11 @@ hr {
   width: 50%;
   text-align: center;
   margin-bottom: 8rem;
+}
+@media (max-width: 800px) {
+  .about .info {
+    width: 80%;
+  }
 }
 @media (max-width: 500px) {
   .about .info {
@@ -474,8 +546,9 @@ hr {
 .about .about-cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: 0;
+  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
   .about .about-cards {
@@ -527,6 +600,11 @@ hr {
   text-align: center;
   margin-bottom: 8rem;
 }
+@media (max-width: 800px) {
+  .problem-statement .problem-info {
+    width: 80%;
+  }
+}
 @media (max-width: 500px) {
   .problem-statement .problem-info {
     width: 90%;
@@ -540,9 +618,9 @@ hr {
 .problem-statement .problem-stat {
   display: flex;
   flex-direction: row;
-  justify-content: 0;
+  justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 60%;
 }
 @media (max-width: 500px) {
   .problem-statement .problem-stat {
@@ -554,13 +632,27 @@ hr {
   }
 }
 .problem-statement .problem-stat h2 {
-  padding: 5rem;
   text-align: center;
   color: #FF9900;
 }
 @media (max-width: 500px) {
+  .problem-statement .problem-stat h2 {
+    padding: 5rem;
+  }
+}
+.problem-statement .problem-stat img {
+  max-width: 100%;
+  padding: 0 5rem;
+}
+@media (max-width: 800px) {
+  .problem-statement .problem-stat img {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 500px) {
   .problem-statement .problem-stat img {
     width: 100%;
+    padding: 0;
   }
 }
 .action-plan {
@@ -572,7 +664,14 @@ hr {
   justify-content: center;
   align-items: center;
   padding: 10rem 0;
+  margin-top: 10rem;
   border-radius: 1.5rem;
+}
+@media (max-width: 800px) {
+  .action-plan {
+    width: 90%;
+    padding: 7rem 0;
+  }
 }
 @media (max-width: 500px) {
   .action-plan {
@@ -600,6 +699,11 @@ hr {
   justify-content: space-between;
   align-items: baseline;
   width: 70%;
+}
+@media (max-width: 800px) {
+  .action-plan .details {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .action-plan .details {
@@ -682,6 +786,14 @@ hr {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .testimonial .testimonies {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: 0;
+  }
+}
 @media (max-width: 500px) {
   .testimonial .testimonies {
     display: flex;
@@ -713,17 +825,24 @@ hr {
   flex-direction: column;
   justify-content: 0;
   align-items: 0;
-  width: 40rem;
-  height: 20rem;
+  max-width: 30%;
   padding: 3rem;
   box-shadow: 0 0 0.3rem 0.3rem #ededed;
   border-radius: 2rem;
   margin: 2rem;
 }
+@media (max-width: 800px) {
+  .testimonial .testimonies .testimony {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: 0;
+    max-width: 60%;
+  }
+}
 @media (max-width: 500px) {
   .testimonial .testimonies .testimony {
-    width: 100%;
-    height: 23rem;
+    max-width: 100%;
     padding: 2rem;
     margin: 2rem 0;
   }
@@ -745,6 +864,7 @@ hr {
 .testimonial .testimonies .testimony .top .title {
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
+  text-align: right;
 }
 .testimonial .testimonies .testimony .top .name {
   color: #89B774;
@@ -758,6 +878,11 @@ hr {
   margin-bottom: 5rem;
   box-shadow: 0.2rem 0.5rem 0.5rem #ededed;
   padding: 5rem;
+}
+@media (max-width: 800px) {
+  .call-to-action {
+    padding: 4rem 0;
+  }
 }
 @media (max-width: 500px) {
   .call-to-action {
@@ -916,17 +1041,18 @@ footer .copyright .orange {
 footer .copyright .tan {
   color: #B88C04;
 }
-.hamburger {
+.landing div header .hamburger {
   display: none;
 }
 @media (max-width: 500px) {
-  .hamburger {
+  .landing div header .hamburger {
     display: block;
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     margin-right: auto;
+    margin-left: 2rem;
   }
-  .hamburger:hover {
+  .landing div header .hamburger:hover {
     cursor: pointer;
   }
 }
