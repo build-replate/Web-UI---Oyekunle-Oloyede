@@ -6,6 +6,14 @@
     width: 50%;
     text-align: center;
 
+    @media @tablet {
+      width: 80%;
+    }
+
+    @media @mobile {
+      width: 90%;
+    }
+
     h2 {
       color: @dark;
       margin-bottom: 3rem;
@@ -14,6 +22,7 @@
 
   h3 {
     margin: 5rem 0 2rem 0;
+    text-align: center;
   }
 
   .meet-the-team {
@@ -22,6 +31,10 @@
     max-width: 70%;
     background: lighten(@tan, 60%);
     border-radius: 2rem;
+
+    @media @mobile {
+      max-width: 90%;
+    }
 
     h3 {
       color: @dark;
@@ -32,6 +45,14 @@
       width: 20rem;
       height: 27rem;
       margin: 5rem 3rem;
+
+      @media @tablet {
+        margin: 2rem;
+      }
+
+      @media @mobile {
+        margin: 3rem 2rem;
+      }
 
       img {
         width: 15rem;
