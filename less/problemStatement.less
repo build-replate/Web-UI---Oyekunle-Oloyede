@@ -11,6 +11,10 @@
     text-align: center;
     margin-bottom: 8rem;
 
+    @media @tablet {
+      width: 80%;
+    }
+
     @media @mobile {
       width: 90%;
       margin-bottom: 4rem;
@@ -23,8 +27,8 @@
   }
 
   .problem-stat {
-    .flex(row, 0, center);
-    width: 80%;
+    .flex(row, center, center);
+    width: 60%;
 
     @media @mobile {
       .flex(column, 0, 0);
@@ -32,14 +36,25 @@
     }
 
     h2 {
-      padding: 5rem;
       text-align: center;
       color: @orange;
+
+      @media @mobile {
+        padding: 5rem;
+      }
     }
 
     img {
+      max-width: 100%;
+      padding: 0 5rem;
+
+      @media @tablet {
+        padding: 0 2rem;
+      }
+
       @media @mobile {
         width: 100%;
+        padding: 0;
       }
     }
   }
