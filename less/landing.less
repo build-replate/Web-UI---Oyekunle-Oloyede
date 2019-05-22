@@ -48,11 +48,12 @@
 
         @media @mobile {
           background: @green;
-          position: fixed;
-          left: 0;
+          // position: fixed;
+          left: 0rem;
           top: 5rem;
           padding: 1rem;
-          display: none;
+          // display: none;
+          transition: 1s;
         }
 
         a {
@@ -72,6 +73,10 @@
             color: @buttonColor;
           }
         }
+      }
+
+      .show {
+        left: 0;
       }
     }
 
