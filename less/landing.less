@@ -63,6 +63,11 @@
           text-decoration: none;
           padding-left: 3rem;
 
+          &:hover {
+            color: lighten(@orange, 20%);
+            transition: 0.3s;
+          }
+
           @media @tablet {
             padding-right: 1.5rem;
           }
@@ -131,9 +136,14 @@
 
         &:hover {
           cursor: pointer;
-          background: darken(@orange, 3%);
+          background: darken(@orange, 5%);
           color: @buttonColor;
-          transition: 0.2s;
+          transition: 0.3s;
+        }
+
+        &:active {
+          transform: translateY(0.2rem);
+          background: darken(@orange, 10%);
         }
       }
     }
