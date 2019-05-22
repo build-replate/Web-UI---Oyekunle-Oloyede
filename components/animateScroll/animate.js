@@ -1,34 +1,32 @@
+class AnimateScroll {
+  constructor(element, link) {
+    this.element = element;
+    this.link = link;
+    this.addScroll();
+  }
+
+  addScroll() {
+    this.element.addEventListener('click', () => {
+      $(`${this.link}`).animatescroll();
+    });
+  }
+}
+
 const callToAction = document.querySelectorAll("#to-action");
 const problemStatement = document.querySelectorAll(".problem");
 const about = document.querySelectorAll("#go-about");
 const goHome = document.querySelector("#go-home");
 
 Array.from(callToAction).map(item => {
-  item.addEventListener("click", () => {
-    $("#call-to-action").animatescroll();
-
-    //   history.pushState({
-    //     id: 'call-to-action',
-    //   }, 'Replate', 'http://127.0.0.1:5500/index.html/about');
-  });
+  new AnimateScroll(item, '#call-to-action');
 });
 
 Array.from(problemStatement).map(item => {
-  item.addEventListener("click", () => {
-    $("#problem").animatescroll();
-  });
+  new AnimateScroll(item, '#problem');
 });
 
-goHome.addEventListener("click", () => {
-  $("#home").animatescroll();
-});
-
-// window.addEventListener('load', () => {
-//   location.href = 'https://google.com';
-// })
+new AnimateScroll(goHome, '#home');
 
 Array.from(about).map(item => {
-  item.addEventListener("click", () => {
-    $("#about").animatescroll();
-  });
+  new AnimateScroll(item, '#about');
 });
