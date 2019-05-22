@@ -370,20 +370,6 @@ hr {
   height: 6rem;
   margin-left: 2rem;
 }
-.landing div header .hamburger {
-  display: none;
-}
-@media (max-width: 500px) {
-  .landing div header .hamburger {
-    display: block;
-    height: 4rem;
-    width: 4rem;
-    margin-right: auto;
-  }
-  .landing div header .hamburger:hover {
-    cursor: pointer;
-  }
-}
 .landing div header nav {
   padding-left: 5rem;
 }
@@ -450,7 +436,7 @@ hr {
   transition: 0.2s;
 }
 .landing .landing-image {
-  width: 33%;
+  max-width: 390px;
 }
 @media (max-width: 500px) {
   .landing .landing-image {
@@ -850,6 +836,11 @@ footer .contact ul li {
 footer .contact ul li:hover {
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  footer .contact ul li {
+    text-align: center;
+  }
+}
 footer .contact .sign-in {
   display: flex;
   flex-direction: column;
@@ -924,4 +915,18 @@ footer .copyright .orange {
 }
 footer .copyright .tan {
   color: #B88C04;
+}
+.hamburger {
+  display: none;
+}
+@media (max-width: 500px) {
+  .hamburger {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    margin-right: auto;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
 }
