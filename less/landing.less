@@ -47,13 +47,14 @@
         }
 
         @media @mobile {
+          display: block;
           background: @green;
-          // position: fixed;
-          left: 0rem;
+          position: fixed;
+          left: -15rem;
           top: 5rem;
+          opacity: 0;
           padding: 1rem;
-          // display: none;
-          transition: 1s;
+          transition: 0.5s;
         }
 
         a {
@@ -76,7 +77,9 @@
       }
 
       .show {
+        display: block;
         left: 0;
+        opacity: 1;
       }
     }
 
