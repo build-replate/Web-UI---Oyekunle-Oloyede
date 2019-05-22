@@ -333,6 +333,15 @@ hr {
   border: none;
   margin: 5rem 0;
 }
+.green {
+  color: #89B774;
+}
+.orange {
+  color: #FF9900;
+}
+.tan {
+  color: #B88C04;
+}
 .landing {
   width: 100vw;
   height: 80vh;
@@ -412,7 +421,7 @@ hr {
 .landing div header nav a {
   color: #808080;
   text-decoration: none;
-  padding-left: 1.5rem;
+  padding-left: 3rem;
 }
 @media (max-width: 800px) {
   .landing div header nav a {
@@ -890,15 +899,6 @@ hr {
     margin-bottom: 2rem;
   }
 }
-.call-to-action .green {
-  color: #89B774;
-}
-.call-to-action .orange {
-  color: #FF9900;
-}
-.call-to-action .tan {
-  color: #B88C04;
-}
 .call-to-action p {
   font-size: 4rem;
   line-height: 5rem;
@@ -1032,15 +1032,6 @@ footer .copyright img {
     margin-top: 2rem;
   }
 }
-footer .copyright .green {
-  color: #89B774;
-}
-footer .copyright .orange {
-  color: #FF9900;
-}
-footer .copyright .tan {
-  color: #B88C04;
-}
 .landing div header .hamburger {
   display: none;
 }
@@ -1055,4 +1046,71 @@ footer .copyright .tan {
   .landing div header .hamburger:hover {
     cursor: pointer;
   }
+}
+.about-cad {
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: center;
+  margin: 5rem 0 10rem 0;
+}
+.about-cad .mission-statement {
+  width: 50%;
+  text-align: center;
+}
+.about-cad .mission-statement h2 {
+  color: #3d3d3d;
+  margin-bottom: 3rem;
+}
+.about-cad h3 {
+  margin: 5rem 0 2rem 0;
+}
+.about-cad .meet-the-team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: 0;
+  flex-wrap: wrap;
+  max-width: 70%;
+  background: #fffbef;
+  border-radius: 2rem;
+}
+.about-cad .meet-the-team h3 {
+  color: #3d3d3d;
+}
+.about-cad .meet-the-team .bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: center;
+  width: 20rem;
+  height: 27rem;
+  margin: 5rem 3rem;
+}
+.about-cad .meet-the-team .bio img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0.2rem 0.2rem #ADADAD;
+  margin: 1rem 0;
+}
+.about-cad .meet-the-team .bio .bio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: center;
+}
+.about-cad .meet-the-team .bio .bio-info .name {
+  color: #89B774;
+}
+.about-cad .meet-the-team .bio .bio-info .contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about-cad .meet-the-team .bio .bio-info .contact-icons img {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
 }
