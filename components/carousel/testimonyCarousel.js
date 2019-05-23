@@ -4,18 +4,22 @@ class Carousel {
     this.leftButton = document.querySelector(".left-button");
     this.rightButton = document.querySelector(".right-button");
 
-    // represents the currently displayed image
     this.currentCardIndex = 1;
 
-    // add click event handler to the right button
+    this.rightButtonHandler();
+    this.leftButtonHandler();
+  }
+
+  rightButtonHandler() {
     this.rightButton.addEventListener("click", () => {
       if (this.currentCardIndex === cardArray.length) this.currentCardIndex = 0;
 
       this.currentCardIndex++;
       cardArray[this.currentCardIndex - 1].showImage();
     });
+  }
 
-    // add click event handler to the left button
+  leftButtonHandler() {
     this.leftButton.addEventListener("click", () => {
       if (this.currentCardIndex === 1) {
         this.currentCardIndex = cardArray.length;
@@ -36,8 +40,8 @@ class Carousel {
 
 const testimonies = document.querySelector(".testimonies");
 
+// displays the first card
 document.querySelector(".testimony").classList.add("show");
 
 const cards = testimonies.querySelectorAll(".testimony");
-
 const cardArray = Array.from(cards).map(card => new Carousel(card));
