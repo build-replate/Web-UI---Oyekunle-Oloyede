@@ -29,47 +29,6 @@ footer {
         }
       }
     }
-
-    .sign-in {
-      .flex(column, 0, center);
-      width: 25rem;
-      height: 25rem;
-      background: @green;
-      padding: 3rem;
-      border-radius: 0.5rem;
-
-      @media @mobile {
-        margin-bottom: 5rem;
-        width: 100%;
-      }
-
-      p {
-        color: @buttonColor;
-      }
-
-      button {
-        .button(13rem, 4rem);
-        font-size: 1.5rem;
-        background: @buttonColor;
-        color: @green;
-        border: 1px solid @buttonColor;
-        margin-top: 2rem;
-
-        &:hover {
-          cursor: pointer;
-          background: darken(@buttonColor, 5%);
-          transition: 0.3s;
-        }
-
-        &:active {
-          .active(@buttonColor);
-        }
-
-        @media @mobile {
-          margin-top: 4rem;
-        }
-      }
-    }
   }
 
   .copyright {
