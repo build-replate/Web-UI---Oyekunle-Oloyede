@@ -12,13 +12,13 @@ class AnimateScroll {
   }
 }
 
-const callToAction = document.querySelectorAll("#to-action");
+const solution = document.querySelectorAll("#solution");
 const problemStatement = document.querySelectorAll(".problem");
 const about = document.querySelectorAll("#go-about");
 const goHome = document.querySelector("#go-home");
 
-Array.from(callToAction).map(item => {
-  new AnimateScroll(item, '#call-to-action');
+Array.from(solution).map(item => {
+  new AnimateScroll(item, '#the-solution');
 });
 
 Array.from(problemStatement).map(item => {
