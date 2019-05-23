@@ -25,7 +25,7 @@ The following frameworks and libraries were used:
 
 ### UI Template
 
-The UI template are hosted on Netlify and could be found [here](https://festive-edison-9b6a45.netlify.com/#)
+The UI template are hosted on Netlify and could be found [here].(https://festive-edison-9b6a45.netlify.com/#)
 
 ### Author
 
