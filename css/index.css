@@ -491,7 +491,7 @@ hr {
   margin-bottom: 3rem;
 }
 .card:nth-child(even) {
-  background: #89B774;
+  background: #76c054;
 }
 .card:nth-child(even) p,
 .card:nth-child(even) h3 {
@@ -685,25 +685,53 @@ footer .contact {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: 0;
+  align-items: flex-end;
   width: 80%;
 }
 @media (max-width: 500px) {
   footer .contact {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: 0;
-    align-items: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+footer .contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 60%;
+}
+@media (max-width: 800px) {
+  footer .contact ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+@media (max-width: 500px) {
+  footer .contact ul {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 }
 footer .contact ul li {
-  margin-bottom: 4rem;
   font-size: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  footer .contact ul li {
+    margin-top: 3rem;
+  }
 }
 @media (max-width: 500px) {
   footer .contact ul li {
     text-align: center;
-    margin-bottom: 2rem;
   }
 }
 footer .contact ul li:hover {
@@ -889,7 +917,7 @@ footer .copyright img {
   align-items: 0;
   flex-wrap: wrap;
   max-width: 70%;
-  background: #fffbef;
+  background: #edf4ea;
   border-radius: 2rem;
 }
 @media (max-width: 500px) {
