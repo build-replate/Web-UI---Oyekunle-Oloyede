@@ -14,4 +14,5 @@ class ToggleMenu {
 
 const hamburger = document.querySelector(".hamburger");
 
+// instantiate the class
 (() => new ToggleMenu(hamburger))();

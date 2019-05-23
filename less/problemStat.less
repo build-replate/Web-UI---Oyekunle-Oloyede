@@ -1,0 +1,32 @@
+.problem-stat {
+  .flex(row, center, center);
+  width: 60%;
+
+  @media @mobile {
+    .flex(column, 0, 0);
+    width: 90%;
+  }
+
+  h2 {
+    text-align: center;
+    color: @orange;
+
+    @media @mobile {
+      padding: 5rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    padding: 0 5rem;
+
+    @media @tablet {
+      padding: 0 2rem;
+    }
+
+    @media @mobile {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

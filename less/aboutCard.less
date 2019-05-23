@@ -1,0 +1,34 @@
+.card {
+  width: 30rem;
+  height: 32rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 2.2rem;
+  box-shadow: 0 0 0.5rem 0.2rem @grey;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+
+  h3 {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+  }
+
+  img {
+    width: 5rem;
+    height: 5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+}
+
+.card:nth-child(even) {
+  background: @green;
+
+  p,
+  h3 {
+    color: @buttonColor;
+  }
+}
