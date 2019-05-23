@@ -491,7 +491,7 @@ hr {
   margin-bottom: 3rem;
 }
 .card:nth-child(even) {
-  background: #76c054;
+  background: #6fb64f;
 }
 .card:nth-child(even) p,
 .card:nth-child(even) h3 {
@@ -713,8 +713,9 @@ footer .contact ul {
 }
 @media (max-width: 500px) {
   footer .contact ul {
+    width: 80%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
