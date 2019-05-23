@@ -18,14 +18,15 @@ footer {
         margin-bottom: 4rem;
         font-size: 2rem;
 
+        @media @mobile {
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
         &:hover {
           cursor: pointer;
           color: lighten(@orange, 20%);
           transition: 0.3s;
-        }
-
-        @media @mobile {
-          text-align: center;
         }
       }
     }
