@@ -389,12 +389,13 @@ hr {
 .landing div header img {
   width: 6rem;
   height: 6rem;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 @media (max-width: 500px) {
   .landing div header img {
     width: 4rem;
     height: 4rem;
+    margin: 0;
   }
 }
 .landing div header .show {
@@ -737,7 +738,7 @@ footer .contact ul li {
 }
 footer .contact ul li:hover {
   cursor: pointer;
-  color: #ffc266;
+  color: #89B774;
   transition: 0.3s;
 }
 footer .copyright {
@@ -1187,7 +1188,7 @@ nav a {
   padding-left: 3rem;
 }
 nav a:hover {
-  color: #ffc266;
+  color: #89B774;
   transition: 0.3s;
 }
 @media (max-width: 800px) {
