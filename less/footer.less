@@ -6,37 +6,21 @@ footer {
   margin-top: 10rem;
 
   .contact {
-    .flex(row, space-between, flex-end);
+    .flex(row, space-between, 0);
     width: 80%;
 
     @media @mobile {
-      .flex(column-reverse, center, center);
+      .flex(column-reverse, 0, 0);
     }
 
     ul {
-      .flex(row, space-between, baseline);
-      width: 60%;
-
-      @media @tablet {
-        .flex(column, space-between, baseline);
-      }
-
-      @media @mobile {
-        width: 80%;
-        .flex(column, center, center);
-      }
-
       li {
-        font-size: 2rem; 
-        margin-right: 2rem;
-        text-align: center;
-
-        @media @tablet {
-          margin-top: 3rem;
-        }
+        margin-bottom: 4rem;
+        font-size: 2rem;
 
         @media @mobile {
           text-align: center;
+          margin-bottom: 2rem;
         }
 
         &:hover {
