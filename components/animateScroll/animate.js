@@ -6,7 +6,7 @@ class AnimateScroll {
   }
 
   addScroll() {
-    this.element.addEventListener('click', () => {
+    this.element.addEventListener("click", () => {
       $(`${this.link}`).animatescroll();
     });
   }
@@ -18,15 +18,15 @@ const about = document.querySelectorAll("#go-about");
 const goHome = document.querySelector("#go-home");
 
 Array.from(solution).map(item => {
-  new AnimateScroll(item, '#the-solution');
+  new AnimateScroll(item, "#the-solution");
 });
 
 Array.from(problemStatement).map(item => {
-  new AnimateScroll(item, '#problem');
+  new AnimateScroll(item, "#problem");
 });
 
-new AnimateScroll(goHome, '#home');
+new AnimateScroll(goHome, "#home");
 
 Array.from(about).map(item => {
-  new AnimateScroll(item, '#about');
+  new AnimateScroll(item, "#about");
 });
