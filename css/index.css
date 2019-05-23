@@ -1204,6 +1204,10 @@ nav a:hover {
     margin-top: 1rem;
     color: #f8f8f8;
   }
+  nav a:hover {
+    color: #ffc266;
+    transition: 0.3s;
+  }
 }
 .problem-stat {
   display: flex;
